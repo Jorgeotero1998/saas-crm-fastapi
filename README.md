@@ -1,27 +1,38 @@
-# SaaS CRM (Multi-tenant) — ES/EN
+# OteroCRM
 
-## Español
+**EN**: Multi-tenant SaaS CRM (FastAPI)  
+**ES**: CRM SaaS multi-tenant (FastAPI)
 
-CRM tipo SaaS con base “enterprise-ready” (auth, RBAC, migraciones, CI, Docker) y un dominio simple pero real:
+## Live demo / Demo online
+- **Web**: https://saas-crm-fastapi.vercel.app
+- **API docs**: https://saas-crm-fastapi-api.onrender.com/docs
+- **API health**: https://saas-crm-fastapi-api.onrender.com/api/v1/health
 
-- Organizaciones
-- Leads
-- IA opcional: “next best action” / resumen de lead vía `/api/v1/ai/chat`
+## Stack
+- FastAPI
+- PostgreSQL
+- Docker
+- RBAC
+- AI (Groq)
 
-### Endpoints
-- `/api/v1/crm/orgs` (GET/POST)
-- `/api/v1/crm/leads` (GET/POST)
+## Local setup (Docker)
 
-### Run local
-
-```bash
+`ash
 cp .env.example .env
 docker compose up --build
-```
+`
 
----
+## Credentials (demo)
 
-## English
+**EN**: Default demo admin is seeded from ADMIN_EMAIL / ADMIN_PASSWORD.  
+**ES**: El admin demo se crea desde ADMIN_EMAIL / ADMIN_PASSWORD.
 
-SaaS-style CRM with a portfolio-grade backend foundation and optional AI helper.
+## Deploy
 
+**EN**:
+- Backend: Render (Blueprint via ender.yaml)
+- Frontend: Vercel (Root Directory: web)
+
+**ES**:
+- Backend: Render (Blueprint con ender.yaml)
+- Frontend: Vercel (Root Directory: web)
